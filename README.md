@@ -1,6 +1,3 @@
-# CSharp-OOP-Basics
-SoftUni course CSharp OOP Basics: All tasks with their solutions.
-
 # Softuni course: [CSharp-OPP-Basics](https://softuni.bg/trainings/1842/csharp-oop-basics-february-2018)
 SoftUni course CSharp OOP Basics - February 2018: All tasks with their solutions.
 
