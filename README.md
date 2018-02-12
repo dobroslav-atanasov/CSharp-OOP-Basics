@@ -19,6 +19,6 @@ Inheritance						| [Lab]																																| [Exercises]
 Interfaces and Abstraction		| [Lab]																																| [Exercises]
 Polymorphism					| [Lab]																																| [Exercises]
 
-### [Resources]
+### [Resources](https://github.com/dobroslav-atanasov/CSharp-OOP-Basics/tree/master/Resources)
 
 ### [Exam - 18 March 2018]
