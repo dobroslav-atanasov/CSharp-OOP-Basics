@@ -12,7 +12,7 @@ SoftUni course CSharp OOP Basics - February 2018: All tasks with their solutions
 ## Repository content:
 Tasks							| Labs																																| Exercises																																	
 --------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|----------------
-Defining Classes				| [Lab]																																| [Exercises]
+Defining Classes				| [Lab](https://github.com/dobroslav-atanasov/CSharp-OOP-Basics/tree/master/01.%20DefiningClasses-Lab)								| [Exercises]
 Working with Abstraction		| [Lab]																																| [Exercises]
 Encapsulation					| [Lab]																																| [Exercises]
 Inheritance						| [Lab]																																| [Exercises]
