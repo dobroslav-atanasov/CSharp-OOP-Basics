@@ -13,7 +13,7 @@ SoftUni course CSharp OOP Basics - February 2018: All tasks with their solutions
 Tasks							| Labs																																| Exercises																																	
 --------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|----------------
 Defining Classes				| [Lab](https://github.com/dobroslav-atanasov/CSharp-OOP-Basics/tree/master/01.DefiningClasses-Lab)									| [Exercises](https://github.com/dobroslav-atanasov/CSharp-OOP-Basics/tree/master/02.DefiningClasses-Exercises)
-Working with Abstraction		| [Lab](https://github.com/dobroslav-atanasov/CSharp-OOP-Basics/tree/master/03.WorkingWithAbstraction-Lab)							| [Exercises]
+Working with Abstraction		| [Lab](https://github.com/dobroslav-atanasov/CSharp-OOP-Basics/tree/master/03.WorkingWithAbstraction-Lab)							| [Exercises](https://github.com/dobroslav-atanasov/CSharp-OOP-Basics/tree/master/04.WorkingWithAbstraction-Exercises)
 Encapsulation					| [Lab]																																| [Exercises]
 Inheritance						| [Lab]																																| [Exercises]
 Interfaces and Abstraction		| [Lab]																																| [Exercises]
