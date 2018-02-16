@@ -3,35 +3,37 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27004.2002
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.DefineClassPerson", "01.DefineClassPerson\01.DefineClassPerson.csproj", "{F2CBB54B-CFD1-47BD-89CB-0F83A49FB0FA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01.DefineClassPerson", "01.DefineClassPerson\01.DefineClassPerson.csproj", "{F2CBB54B-CFD1-47BD-89CB-0F83A49FB0FA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.CreatingConstructors", "02.CreatingConstructors\02.CreatingConstructors.csproj", "{18AEC022-810D-44F0-AE74-79CF857FBAC7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02.CreatingConstructors", "02.CreatingConstructors\02.CreatingConstructors.csproj", "{18AEC022-810D-44F0-AE74-79CF857FBAC7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.OldestFamilyMember", "03.OldestFamilyMember\03.OldestFamilyMember.csproj", "{CA696D0A-5488-498B-8D18-070B214F510D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03.OldestFamilyMember", "03.OldestFamilyMember\03.OldestFamilyMember.csproj", "{CA696D0A-5488-498B-8D18-070B214F510D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.OpinionPoll", "04.OpinionPoll\04.OpinionPoll.csproj", "{CE77E81C-ADF1-4A92-BF41-2BCC41EF222D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04.OpinionPoll", "04.OpinionPoll\04.OpinionPoll.csproj", "{CE77E81C-ADF1-4A92-BF41-2BCC41EF222D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05.DateModifier", "05.DateModifier\05.DateModifier.csproj", "{E6A6171D-D09A-4AA9-AB64-24932365C909}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05.DateModifier", "05.DateModifier\05.DateModifier.csproj", "{E6A6171D-D09A-4AA9-AB64-24932365C909}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06.CompanyRoster", "06.CompanyRoster\06.CompanyRoster.csproj", "{E5642B47-70BF-4627-AB74-6939B8110478}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "06.CompanyRoster", "06.CompanyRoster\06.CompanyRoster.csproj", "{E5642B47-70BF-4627-AB74-6939B8110478}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07.SpeedRacing", "07.SpeedRacing\07.SpeedRacing.csproj", "{F941DDFB-8A1B-4AA2-A129-26EE70F8E1C4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "07.SpeedRacing", "07.SpeedRacing\07.SpeedRacing.csproj", "{F941DDFB-8A1B-4AA2-A129-26EE70F8E1C4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08.RawData", "08.RawData\08.RawData.csproj", "{989AEAC8-117F-42F2-8DC1-1B57FDA9C2E2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "08.RawData", "08.RawData\08.RawData.csproj", "{989AEAC8-117F-42F2-8DC1-1B57FDA9C2E2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09.RectangleIntersection", "09.RectangleIntersection\09.RectangleIntersection.csproj", "{8C7E9FDA-FAF5-4D83-8226-CB62FFD4DD7F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "09.RectangleIntersection", "09.RectangleIntersection\09.RectangleIntersection.csproj", "{8C7E9FDA-FAF5-4D83-8226-CB62FFD4DD7F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10.CarSalesman", "10.CarSalesman\10.CarSalesman.csproj", "{812CF06D-559E-4124-B49D-2E97701F276C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "10.CarSalesman", "10.CarSalesman\10.CarSalesman.csproj", "{812CF06D-559E-4124-B49D-2E97701F276C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11.PokemonTrainer", "11.PokemonTrainer\11.PokemonTrainer.csproj", "{BAEF948E-8C81-499B-B37B-0AE70EA566B9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "11.PokemonTrainer", "11.PokemonTrainer\11.PokemonTrainer.csproj", "{BAEF948E-8C81-499B-B37B-0AE70EA566B9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12.Google", "12.Google\12.Google.csproj", "{823DEE5D-F8D8-4191-B98D-1496915BBA41}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "12.Google", "12.Google\12.Google.csproj", "{823DEE5D-F8D8-4191-B98D-1496915BBA41}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13.FamilyTree", "13.FamilyTree\13.FamilyTree.csproj", "{C8C69325-0642-4262-B3B4-3D7BD3CE53F1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "13.FamilyTree", "13.FamilyTree\13.FamilyTree.csproj", "{C8C69325-0642-4262-B3B4-3D7BD3CE53F1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14.CatLady", "14.CatLady\14.CatLady.csproj", "{47519FA0-0D39-40EC-930F-10331DF32F09}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "14.CatLady", "14.CatLady\14.CatLady.csproj", "{47519FA0-0D39-40EC-930F-10331DF32F09}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "15.DrawingTool", "15.DrawingTool\15.DrawingTool.csproj", "{57196FCC-EA04-4508-8B21-B8B8CF136817}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "15.DrawingTool", "15.DrawingTool\15.DrawingTool.csproj", "{57196FCC-EA04-4508-8B21-B8B8CF136817}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarSalesman", "CarSalesman\CarSalesman.csproj", "{55B6C45D-316F-48FA-AB82-BF410A8877C3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -99,6 +101,10 @@ Global
 		{57196FCC-EA04-4508-8B21-B8B8CF136817}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{57196FCC-EA04-4508-8B21-B8B8CF136817}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{57196FCC-EA04-4508-8B21-B8B8CF136817}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55B6C45D-316F-48FA-AB82-BF410A8877C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55B6C45D-316F-48FA-AB82-BF410A8877C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55B6C45D-316F-48FA-AB82-BF410A8877C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55B6C45D-316F-48FA-AB82-BF410A8877C3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
