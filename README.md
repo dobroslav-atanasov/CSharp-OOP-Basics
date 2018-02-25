@@ -14,7 +14,7 @@ Tasks							| Labs																																| Exercises
 --------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|----------------
 Defining Classes				| [Lab](https://github.com/dobroslav-atanasov/CSharp-OOP-Basics/tree/master/01.DefiningClasses-Lab)									| [Exercises](https://github.com/dobroslav-atanasov/CSharp-OOP-Basics/tree/master/02.DefiningClasses-Exercises)
 Working with Abstraction		| [Lab](https://github.com/dobroslav-atanasov/CSharp-OOP-Basics/tree/master/03.WorkingWithAbstraction-Lab)							| [Exercises](https://github.com/dobroslav-atanasov/CSharp-OOP-Basics/tree/master/04.WorkingWithAbstraction-Exercises)
-Encapsulation					| [Lab](https://github.com/dobroslav-atanasov/CSharp-OOP-Basics/tree/master/05.Encapsulation-Lab)									| [Exercises]
+Encapsulation					| [Lab](https://github.com/dobroslav-atanasov/CSharp-OOP-Basics/tree/master/05.Encapsulation-Lab)									| [Exercises](https://github.com/dobroslav-atanasov/CSharp-OOP-Basics/tree/master/06.Encapsulation-Exercises)
 Inheritance						| [Lab]																																| [Exercises]
 Interfaces and Abstraction		| [Lab]																																| [Exercises]
 Polymorphism					| [Lab]																																| [Exercises]
