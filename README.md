@@ -16,7 +16,7 @@ Defining Classes				| [Lab](https://github.com/dobroslav-atanasov/CSharp-OOP-Bas
 Working with Abstraction		| [Lab](https://github.com/dobroslav-atanasov/CSharp-OOP-Basics/tree/master/03.WorkingWithAbstraction-Lab)							| [Exercises](https://github.com/dobroslav-atanasov/CSharp-OOP-Basics/tree/master/04.WorkingWithAbstraction-Exercises)
 Encapsulation					| [Lab](https://github.com/dobroslav-atanasov/CSharp-OOP-Basics/tree/master/05.Encapsulation-Lab)									| [Exercises](https://github.com/dobroslav-atanasov/CSharp-OOP-Basics/tree/master/06.Encapsulation-Exercises)
 Inheritance						| [Lab](https://github.com/dobroslav-atanasov/CSharp-OOP-Basics/tree/master/07.Inheritance-Lab)										| [Exercises](https://github.com/dobroslav-atanasov/CSharp-OOP-Basics/tree/master/08.Inheritance-Exercises)
-Interfaces and Abstraction		| [Lab](https://github.com/dobroslav-atanasov/CSharp-OOP-Basics/tree/master/09.InterfacesAndAbstraction-Lab)						| [Exercises]
+Interfaces and Abstraction		| [Lab](https://github.com/dobroslav-atanasov/CSharp-OOP-Basics/tree/master/09.InterfacesAndAbstraction-Lab)						| [Exercises](https://github.com/dobroslav-atanasov/CSharp-OOP-Basics/tree/master/10.InterfacesAndAbstraction-Exercises)
 Polymorphism					| [Lab]																																| [Exercises]
 
 ### [Resources](https://github.com/dobroslav-atanasov/CSharp-OOP-Basics/tree/master/Resources)
