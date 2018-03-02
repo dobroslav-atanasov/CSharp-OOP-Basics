@@ -17,7 +17,7 @@ Working with Abstraction		| [Lab](https://github.com/dobroslav-atanasov/CSharp-O
 Encapsulation					| [Lab](https://github.com/dobroslav-atanasov/CSharp-OOP-Basics/tree/master/05.Encapsulation-Lab)									| [Exercises](https://github.com/dobroslav-atanasov/CSharp-OOP-Basics/tree/master/06.Encapsulation-Exercises)
 Inheritance						| [Lab](https://github.com/dobroslav-atanasov/CSharp-OOP-Basics/tree/master/07.Inheritance-Lab)										| [Exercises](https://github.com/dobroslav-atanasov/CSharp-OOP-Basics/tree/master/08.Inheritance-Exercises)
 Interfaces and Abstraction		| [Lab](https://github.com/dobroslav-atanasov/CSharp-OOP-Basics/tree/master/09.InterfacesAndAbstraction-Lab)						| [Exercises](https://github.com/dobroslav-atanasov/CSharp-OOP-Basics/tree/master/10.InterfacesAndAbstraction-Exercises)
-Polymorphism					| [Lab](https://github.com/dobroslav-atanasov/CSharp-OOP-Basics/tree/master/11.Polymorphism-Lab)									| [Exercises]
+Polymorphism					| [Lab](https://github.com/dobroslav-atanasov/CSharp-OOP-Basics/tree/master/11.Polymorphism-Lab)									| [Exercises](https://github.com/dobroslav-atanasov/CSharp-OOP-Basics/tree/master/12.Polymorphism-Exercises)
 
 - [Exam Preparation I: Need For Speed]() - [Descriptions]()
 - [Exam Preparation II: Avatar]() - [Descriptions]()
