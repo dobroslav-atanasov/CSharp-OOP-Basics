@@ -1,7 +1,7 @@
-﻿namespace Forum.App.Services.Contracts
+﻿namespace Forum.App.Controllers.Contracts
 {
+    using Enums;
     using Forum.App.UserInterface.Contracts;
-    using Forum.App.Enums;
 
     public interface IController
     {

@@ -1,4 +1,4 @@
-﻿namespace Forum.App.UserInterface.Contracts
+﻿namespace Forum.App
 {
     public interface IPositionable
     {

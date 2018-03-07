@@ -92,11 +92,11 @@
                 int id = int.Parse(parts[0]);
                 string username = parts[1];
                 string password = parts[2];
-                int[] postIds = parts[3]
-                    .Split(new[] { ',' }, StringSplitOptions.RemoveEmptyEntries)
-                    .Select(int.Parse)
-                    .ToArray();
-                User user = new User(id, username, password, postIds);
+                //int[] postIds = parts[3]
+                //    .Split(new[] { ',' }, StringSplitOptions.RemoveEmptyEntries)
+                //    .Select(int.Parse)
+                //    .ToArray();
+                User user = new User(id, username, password);
                 users.Add(user);
             }
 
@@ -166,8 +166,8 @@
 
             foreach (User user in users)
             {
-                const string userFormat = "{0};{1};{2};{3}";
-                string line = string.Format(userFormat, user.Id, user.Username, user.Password, string.Join(",", user.PostIds));
+                const string userFormat = "{0};{1};{2}";
+                string line = string.Format(userFormat, user.Id, user.Username, user.Password);
                 lines.Add(line);
             }
 

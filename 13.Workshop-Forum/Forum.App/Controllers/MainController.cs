@@ -1,11 +1,11 @@
-﻿namespace Forum.App.Services
+﻿namespace Forum.App.Controllers
 {
-    using System;
     using Enums;
-    using Forum.App.Services.Contracts;
+    using Exceptions;
+    using Forum.App.Controllers.Contracts;
+    using Forum.App.UserInterface;
     using Forum.App.UserInterface.Contracts;
-    using Forum.App.UserInterface.Views;
-    
+
     public class MainController : IController, IUserRestrictedController
     {
         private const int COMMAND_COUNT = 3;
@@ -23,10 +23,10 @@
         }
 
         public MenuState ExecuteCommand(int index)
-        {
+        {      
             if (LoggedInUser)
             {
-                switch ((UserCommand) index)
+                switch ((UserCommand)index)
                 {
                     case UserCommand.Categories:
                         return MenuState.Categories;
@@ -37,7 +37,7 @@
                 }
             }
 
-            switch ((GuestCommand) index)
+            switch ((GuestCommand)index)
             {
                 case GuestCommand.Categories:
                     return MenuState.Categories;
@@ -47,7 +47,7 @@
                     return MenuState.Signup;
             }
 
-            throw new InvalidOperationException();
+            throw new InvalidCommandException();
         }
 
         public void UserLogIn()
@@ -62,16 +62,12 @@
 
         private enum GuestCommand
         {
-            Categories,
-            Login,
-            SignUp
+            Categories, Login, SignUp
         }
 
         private enum UserCommand
         {
-            Categories,
-            AddPost,
-            LogOut
+            Categories, AddPost, LogOut
         }
     }
 }

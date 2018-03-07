@@ -4,8 +4,8 @@
     using System.Collections.Generic;
     using System.Linq;
     using Enums;
-    using Forum.App.Services;
-    using Forum.App.Services.Contracts;
+    using Forum.App.Controllers;
+    using Forum.App.Controllers.Contracts;
     using Forum.App.UserInterface;
     using Forum.App.UserInterface.Contracts;
 
@@ -31,7 +31,7 @@
         private string Username { get; set; }
         private IView CurrentView { get; set; }
 
-        private MenuState State => (MenuState) controllerHistory.Peek();
+        private MenuState State => (MenuState)controllerHistory.Peek();
         private int CurrentControllerIndex => this.controllerHistory.Peek();
         private IController CurrentController => this.controllers[this.controllerHistory.Peek()];
         internal ILabel CurrentLabel => this.CurrentView.Buttons[currentOptionIndex];
@@ -82,9 +82,9 @@
 
         internal void Back()
         {
-            if (this.State == MenuState.Categories || this.State == MenuState.ViewCategory)
+            if (this.State == MenuState.Categories || this.State == MenuState.OpenCategory)
             {
-                IPaginationController currentController = (IPaginationController) this.CurrentController;
+                IPaginationController currentController = (IPaginationController)this.CurrentController;
                 currentController.CurrentPage = 0;
             }
 
@@ -119,8 +119,7 @@
                 case MenuState.Back:
                     this.Back();
                     break;
-                case MenuState.ViewCategory:
-                case MenuState.Error:
+                case MenuState.Rerender:
                     RenderCurrentView();
                     break;
                 case MenuState.AddReplyToPost:
@@ -147,12 +146,18 @@
 
         private void LogOut()
         {
-            throw new NotImplementedException();
+            this.Username = string.Empty;
+            this.LogOutUser();
+            this.RenderCurrentView();
         }
 
         private void SuccessfulLogin()
         {
-            throw new NotImplementedException();
+            IReadUserInfoController loginController = (IReadUserInfoController) this.CurrentController;
+            this.Username = loginController.Username;
+
+            this.LogInUser();
+            RedirectToMenu(MenuState.Main);
         }
 
         private void ViewPost()
@@ -179,17 +184,35 @@
 
         private bool RedirectToMenu(MenuState newState)
         {
-            throw new NotImplementedException();
+            if (this.State != newState)
+            {
+                this.controllerHistory.Push((int)newState);
+                this.RenderCurrentView();
+                return true;
+            }
+            return false;
         }
 
         private void LogInUser()
         {
-            throw new NotImplementedException();
+            foreach (var controller in this.controllers)
+            {
+                if (controller is IUserRestrictedController userRestrictedController)
+                {
+                    userRestrictedController.UserLogIn();
+                }
+            }
         }
 
         private void LogOutUser()
         {
-            throw new NotImplementedException();
+            foreach (var controller in this.controllers)
+            {
+                if (controller is IUserRestrictedController userRestrictedController)
+                {
+                    userRestrictedController.UserLogOut();
+                }
+            }
         }
     }
 }

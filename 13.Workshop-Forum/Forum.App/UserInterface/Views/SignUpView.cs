@@ -1,4 +1,4 @@
-﻿namespace Forum.App.UserInterface.Views
+﻿namespace Forum.App.UserInterface
 {
     using Forum.App.UserInterface.Contracts;
 
@@ -29,13 +29,13 @@
 
         private void InitializeStaticLabels(Position consoleCenter)
         {
-            string[] labelContents = new string[] {this.ErrorMessage, "Name:", "Password:"};
+            string[] labelContents = new string[] { this.ErrorMessage, "Name:", "Password:" };
 
             Position[] labelPositions = new Position[]
             {
-                new Position(consoleCenter.Left - 16, consoleCenter.Top - 14), // Error
-                new Position(consoleCenter.Left - 16, consoleCenter.Top - 10), // Name:
-                new Position(consoleCenter.Left - 16, consoleCenter.Top - 8), // Password:
+                new Position(consoleCenter.Left - 16, consoleCenter.Top - 14),   // Error
+                new Position(consoleCenter.Left - 16, consoleCenter.Top - 10),   // Name:
+                new Position(consoleCenter.Left - 16, consoleCenter.Top - 8),    // Password:
             };
 
             this.Labels = new ILabel[labelContents.Length];
@@ -58,9 +58,9 @@
             Position[] buttonPositions = new Position[]
             {
                 new Position(consoleCenter.Left - 10, consoleCenter.Top - 10), // Name
-                new Position(consoleCenter.Left - 6, consoleCenter.Top - 8), // Password
-                new Position(consoleCenter.Left + 16, consoleCenter.Top), // Log In
-                new Position(consoleCenter.Left + 16, consoleCenter.Top + 1) // Back
+                new Position(consoleCenter.Left - 6, consoleCenter.Top - 8),   // Password
+                new Position(consoleCenter.Left + 16, consoleCenter.Top),      // Log In
+                new Position(consoleCenter.Left + 16, consoleCenter.Top + 1)   // Back
             };
 
             this.Buttons = new ILabel[buttonContents.Length];

@@ -1,4 +1,4 @@
-﻿namespace Forum.App.Services.Contracts
+﻿namespace Forum.App.Controllers.Contracts
 {
     public interface IUserRestrictedController
     {

@@ -1,4 +1,4 @@
-﻿namespace Forum.App.UserInterface
+﻿namespace Forum.App
 {
     using Forum.App.UserInterface.Contracts;
 
