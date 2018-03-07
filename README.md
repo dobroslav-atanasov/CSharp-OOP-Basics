@@ -21,7 +21,7 @@ Polymorphism					| [Lab](https://github.com/dobroslav-atanasov/CSharp-OOP-Basics
 
 - [Workshop - Forum.App](https://github.com/dobroslav-atanasov/CSharp-OOP-Basics/tree/master/13.Workshop-Forum)
 
-- [Exam Preparation I: Need For Speed]() - [Descriptions]()
+- [Exam Preparation I: Need For Speed](https://github.com/dobroslav-atanasov/CSharp-OOP-Basics/tree/master/14.ExamPreparationI-NeedForSpeed) - [Descriptions](https://github.com/dobroslav-atanasov/CSharp-OOP-Basics/tree/master/Resources/Exam%20Preparation%20-%20I%20-%20Need%20For%20Speed)
 - [Exam Preparation II: Avatar]() - [Descriptions]()
 - [Exam Preparation III: C# OOP Basics Exam 16.07.2017]() - [Descriptions]()
 - [Exam Preparation IV: C# OOP Basics Exam 05.09.2017]() - [Descriptions]()
