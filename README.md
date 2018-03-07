@@ -19,7 +19,7 @@ Inheritance						| [Lab](https://github.com/dobroslav-atanasov/CSharp-OOP-Basics
 Interfaces and Abstraction		| [Lab](https://github.com/dobroslav-atanasov/CSharp-OOP-Basics/tree/master/09.InterfacesAndAbstraction-Lab)						| [Exercises](https://github.com/dobroslav-atanasov/CSharp-OOP-Basics/tree/master/10.InterfacesAndAbstraction-Exercises)
 Polymorphism					| [Lab](https://github.com/dobroslav-atanasov/CSharp-OOP-Basics/tree/master/11.Polymorphism-Lab)									| [Exercises](https://github.com/dobroslav-atanasov/CSharp-OOP-Basics/tree/master/12.Polymorphism-Exercises)
 
-- [Workshop - Forum.App]()
+- [Workshop - Forum.App](https://github.com/dobroslav-atanasov/CSharp-OOP-Basics/tree/master/13.Workshop-Forum)
 
 - [Exam Preparation I: Need For Speed]() - [Descriptions]()
 - [Exam Preparation II: Avatar]() - [Descriptions]()
