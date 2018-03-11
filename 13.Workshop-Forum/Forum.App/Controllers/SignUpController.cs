@@ -26,10 +26,10 @@
             SignUp,
             Back,
         }
-        
+
         public MenuState ExecuteCommand(int index)
         {
-            switch ((Command)index)
+            switch ((Command) index)
             {
                 case Command.ReadUsername:
                     this.ReadUsername();

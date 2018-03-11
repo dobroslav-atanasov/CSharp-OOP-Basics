@@ -46,7 +46,7 @@
 
         private void InitializeButtons(Position consoleCenter)
         {
-            string[] defaultButtonContent = new string[] { "Back", "Previous Page", "Next Page" };
+            string[] defaultButtonContent = new string[] {"Back", "Previous Page", "Next Page"};
             Position[] defaultButtonPositions = new Position[]
             {
                 new Position(consoleCenter.Left + 15, consoleCenter.Top - 12), // Back   
@@ -80,7 +80,8 @@
                     currentCategoryName = this.PostTitles[i];
                 }
 
-                ILabel label = new Label(currentCategoryName, categoryButtonPositions[i], currentCategoryName == string.Empty);
+                ILabel label = new Label(currentCategoryName, categoryButtonPositions[i],
+                    currentCategoryName == string.Empty);
 
                 buttons.Add(label);
             }
@@ -93,7 +94,8 @@
 
         private void InitializeStaticLabels(Position consoleCenter)
         {
-            string[] labelContent = new string[] { string.Format("CATEGORY: {0}", this.categoryName), "Title", /*"Replies"*/ };
+            string[] labelContent = new string[]
+                {string.Format("CATEGORY: {0}", this.categoryName), "Title", /*"Replies"*/};
             Position[] labelPositions = new Position[]
             {
                 new Position(consoleCenter.Left - 18, consoleCenter.Top - 12), // CATEGORY: {0}

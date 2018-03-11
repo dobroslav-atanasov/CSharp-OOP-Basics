@@ -3,11 +3,13 @@
     using System;
     using System.Collections.Generic;
     using System.Linq;
-    using Forum.App.Enums;
-    using Forum.App.Controllers;
-    using Forum.App.Controllers.Contracts;
-    using Forum.App.UserInterface;
-    using Forum.App.UserInterface.Contracts;
+    using Enums;
+    using Controllers;
+    using Controllers.Contracts;
+    using UserInterface;
+    using UserInterface.Contracts;
+    using Models;
+    using Services;
 
     internal class MenuController
     {
@@ -23,7 +25,7 @@
             this.controllers = controllers.ToArray();
             this.forumViewer = forumViewer;
 
-            InitializeControllerHistory();
+            this.InitializeControllerHistory();
 
             this.currentOptionIndex = DEFAULT_INDEX;
         }
@@ -31,7 +33,7 @@
         private string Username { get; set; }
         private IView CurrentView { get; set; }
 
-        private MenuState State => (MenuState)controllerHistory.Peek();
+        private MenuState State => (MenuState)this.controllerHistory.Peek();
         private int CurrentControllerIndex => this.controllerHistory.Peek();
         private IController CurrentController => this.controllers[this.controllerHistory.Peek()];
         internal ILabel CurrentLabel => this.CurrentView.Buttons[currentOptionIndex];
@@ -102,32 +104,32 @@
             switch (newState)
             {
                 case MenuState.PostAdded:
-                    AddPost();
+                    this.AddPost();
                     break;
                 case MenuState.OpenCategory:
-                    OpenCategory();
+                    this.OpenCategory();
                     break;
                 case MenuState.ViewPost:
-                    ViewPost();
+                    this.ViewPost();
                     break;
                 case MenuState.SuccessfulLogIn:
-                    SuccessfulLogin();
+                    this.SuccessfulLogin();
                     break;
                 case MenuState.LoggedOut:
-                    LogOut();
+                    this.LogOut();
                     break;
                 case MenuState.Back:
                     this.Back();
                     break;
-				case MenuState.Error:
+                case MenuState.Error:
                 case MenuState.Rerender:
-                    RenderCurrentView();
+                    this.RenderCurrentView();
                     break;
                 case MenuState.AddReplyToPost:
-                    RedirectToAddReply();
+                    this.RedirectToAddReply();
                     break;
                 case MenuState.ReplyAdded:
-                    AddReply();
+                    this.AddReply();
                     break;
                 default:
                     this.RedirectToMenu(newState);
@@ -137,12 +139,15 @@
 
         private void AddReply()
         {
-            throw new NotImplementedException();
+            this.Back();
         }
 
         private void RedirectToAddReply()
         {
-            throw new NotImplementedException();
+            PostDetailsController postDetailsController = (PostDetailsController)this.CurrentController;
+            AddReplyController addReplyController = (AddReplyController)this.controllers[(int)MenuState.AddReply];
+            addReplyController.SetPostId(postDetailsController.PostId);
+            this.RedirectToMenu(MenuState.AddReply);
         }
 
         private void LogOut()
@@ -154,7 +159,7 @@
 
         private void SuccessfulLogin()
         {
-            IReadUserInfoController loginController = (IReadUserInfoController) this.CurrentController;
+            IReadUserInfoController loginController = (IReadUserInfoController)this.CurrentController;
             this.Username = loginController.Username;
 
             this.LogInUser();
@@ -163,17 +168,41 @@
 
         private void ViewPost()
         {
-            throw new NotImplementedException();
+            CategoryController categoryController = (CategoryController)this.CurrentController;
+            int categoryId = categoryController.CategoryId;
+            Post[] posts = PostService.GetPostsByCategory(categoryId).ToArray();
+
+            int postIndex = categoryController.CurrentPage * CategoryController.PAGE_OFFSET + this.currentOptionIndex;
+            int postId = posts[postIndex - 1].Id;
+
+            PostDetailsController postController = (PostDetailsController)this.controllers[(int)MenuState.ViewPost];
+            postController.SetPostId(postId);
+            this.RedirectToMenu(MenuState.ViewPost);
         }
 
         private void OpenCategory()
         {
-            throw new NotImplementedException();
+            CategoriesController categoriesController = (CategoriesController)this.CurrentController;
+            int categoryIndex = categoriesController.CurrentPage * CategoriesController.PAGE_OFFSET +
+                                this.currentOptionIndex;
+
+            var categoryCtrlr = (CategoryController)this.controllers[(int)MenuState.OpenCategory];
+            categoryCtrlr.SetCategory(categoryIndex);
+
+            this.RedirectToMenu(MenuState.OpenCategory);
         }
 
         private void AddPost()
         {
-            throw new NotImplementedException();
+            AddPostController addPostController = (AddPostController)this.CurrentController;
+
+            int postId = addPostController.Post.PostId;
+            PostDetailsController postViewer = (PostDetailsController)this.controllers[(int)MenuState.ViewPost];
+            postViewer.SetPostId(postId);
+
+            addPostController.ResetPost();
+            this.controllerHistory.Pop();
+            this.RedirectToMenu(MenuState.ViewPost);
         }
 
         private void RenderCurrentView()
@@ -187,7 +216,7 @@
         {
             if (this.State != newState)
             {
-                this.controllerHistory.Push((int) newState);
+                this.controllerHistory.Push((int)newState);
                 this.RenderCurrentView();
                 return true;
             }

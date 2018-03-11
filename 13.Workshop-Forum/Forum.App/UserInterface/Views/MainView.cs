@@ -27,7 +27,7 @@
 
         private void InitializeButtons(Position consoleCenter)
         {
-            string[] buttonContents = new string[] { "Categories", "Log In", "Sign Up" };
+            string[] buttonContents = new string[] {"Categories", "Log In", "Sign Up"};
 
             if (!string.IsNullOrWhiteSpace(this.Username))
             {
@@ -52,12 +52,12 @@
 
         private void InitializeStaticLabels(Position consoleCenter)
         {
-            string[] labelContents = new string[] 
+            string[] labelContents = new string[]
             {
-            //@"
-            //▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
-            //█        ▀█▄▀▄▀██████ ▀█▄▀▄▀██████
-            //            ▀█▄█▄███▀    ▀█▄█▄███",
+                //@"
+                //▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+                //█        ▀█▄▀▄▀██████ ▀█▄▀▄▀██████
+                //            ▀█▄█▄███▀    ▀█▄█▄███",
                 "FORUM",
                 string.Format("Hi, {0}", this.Username),
             };
@@ -76,7 +76,8 @@
                 this.Labels[i] = new Label(labelContents[i], labelPositions[i]);
             }
 
-            this.Labels[lastIndex] = new Label(labelContents[lastIndex], labelPositions[lastIndex], string.IsNullOrWhiteSpace(this.Username));
+            this.Labels[lastIndex] = new Label(labelContents[lastIndex], labelPositions[lastIndex],
+                string.IsNullOrWhiteSpace(this.Username));
         }
     }
 }

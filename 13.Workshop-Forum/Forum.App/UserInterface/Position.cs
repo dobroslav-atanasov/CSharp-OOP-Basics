@@ -20,6 +20,7 @@ namespace Forum.App
             get { return top; }
             set { top = value; }
         }
+
         public int Left
         {
             get { return left; }

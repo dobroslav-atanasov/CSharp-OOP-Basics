@@ -16,12 +16,19 @@
         private const int OFFSET = 37;
         private IEnumerable<string> lines = new List<string>();
         private string text = string.Empty;
-        private static char[] forbiddenCharacters = { ';' };
+        private static char[] forbiddenCharacters = {';'};
 
         private int MaxLength { get; set; }
 
-        public int Left { get => this.x; }
-        public int Top { get => this.y; }
+        public int Left
+        {
+            get => this.x;
+        }
+
+        public int Top
+        {
+            get => this.y;
+        }
 
         public IEnumerable<string> Lines
         {
@@ -115,6 +122,5 @@
             }
             this.lines = StringProcessor.Split(this.Text);
         }
-
     }
 }

@@ -23,10 +23,10 @@
         }
 
         public MenuState ExecuteCommand(int index)
-        {      
+        {
             if (LoggedInUser)
             {
-                switch ((UserCommand)index)
+                switch ((UserCommand) index)
                 {
                     case UserCommand.Categories:
                         return MenuState.Categories;
@@ -37,7 +37,7 @@
                 }
             }
 
-            switch ((GuestCommand)index)
+            switch ((GuestCommand) index)
             {
                 case GuestCommand.Categories:
                     return MenuState.Categories;
@@ -62,12 +62,16 @@
 
         private enum GuestCommand
         {
-            Categories, Login, SignUp
+            Categories,
+            Login,
+            SignUp
         }
 
         private enum UserCommand
         {
-            Categories, AddPost, LogOut
+            Categories,
+            AddPost,
+            LogOut
         }
     }
 }

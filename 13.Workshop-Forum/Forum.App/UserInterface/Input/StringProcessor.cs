@@ -3,10 +3,11 @@
     using System;
     using System.Collections.Generic;
     using System.Linq;
- 
+
     public static class StringProcessor
     {
         private const int LINE_OFFSET = 37;
+
         public static IEnumerable<string> Split(string text)
         {
             List<String> splitText = new List<String>();

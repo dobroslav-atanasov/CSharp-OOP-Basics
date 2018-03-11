@@ -10,7 +10,10 @@
     {
         private const string DATA_PATH = "../data/";
         private const string CONFIG_PATH = "config.ini";
-        private const string DEFAULT_CONFIG = "users=users.csv\r\ncategories=categories.csv\r\nposts=posts.csv\r\nreplies=replies.csv";
+
+        private const string DEFAULT_CONFIG =
+            "users=users.csv\r\ncategories=categories.csv\r\nposts=posts.csv\r\nreplies=replies.csv";
+
         private static readonly Dictionary<string, string> config;
 
         static DataMapper()
@@ -71,7 +74,7 @@
                 int id = int.Parse(parts[0]);
                 string name = parts[1];
                 var postIds = parts[2]
-                    .Split(new[] { ',' }, StringSplitOptions.RemoveEmptyEntries)
+                    .Split(new[] {','}, StringSplitOptions.RemoveEmptyEntries)
                     .Select(int.Parse)
                     .ToList();
                 Category category = new Category(id, name, postIds);
@@ -93,7 +96,7 @@
                 string username = parts[1];
                 string password = parts[2];
                 int[] postIds = parts[3]
-                    .Split(new []{','}, StringSplitOptions.RemoveEmptyEntries)
+                    .Split(new[] {','}, StringSplitOptions.RemoveEmptyEntries)
                     .Select(int.Parse)
                     .ToArray();
                 User user = new User(id, username, password, postIds);
@@ -117,7 +120,7 @@
                 int categoryId = int.Parse(parts[3]);
                 int authorId = int.Parse(parts[4]);
                 int[] replyIds = parts[5]
-                    .Split(new[] { ',' }, StringSplitOptions.RemoveEmptyEntries)
+                    .Split(new[] {','}, StringSplitOptions.RemoveEmptyEntries)
                     .Select(int.Parse)
                     .ToArray();
                 Post post = new Post(id, title, content, categoryId, authorId, replyIds);
@@ -153,7 +156,8 @@
             foreach (Category category in categories)
             {
                 const string categoryFormat = "{0};{1};{2};";
-                string line = string.Format(categoryFormat, category.Id, category.Name, string.Join(",", category.PostIds));
+                string line = string.Format(categoryFormat, category.Id, category.Name,
+                    string.Join(",", category.PostIds));
                 lines.Add(line);
             }
 
@@ -182,7 +186,7 @@
             {
                 const string postFormat = "{0};{1};{2};{3};{4};{5};";
                 string line = string.Format(postFormat, post.Id, post.Title, post.Content, post.CategoryId,
-                    post.AuthorId, string.Join(",", post.ReplyIds));
+                    post.AuthorId, string.Join(",", post.Replies));
                 lines.Add(line);
             }
 
@@ -195,7 +199,7 @@
 
             foreach (Reply reply in replies)
             {
-                const string replyFormat = "{0};{1};{2};{3};";
+                const string replyFormat = "{0};{1};{2};{3}";
                 string line = string.Format(replyFormat, reply.Id, reply.Content, reply.AuthorId, reply.PostId);
                 lines.Add(line);
             }
