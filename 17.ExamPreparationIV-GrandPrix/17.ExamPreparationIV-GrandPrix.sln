@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2002
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GrandPrix", "GrandPrix\GrandPrix.csproj", "{DEF88FA3-100E-45B2-9EC4-16FD72F70594}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DEF88FA3-100E-45B2-9EC4-16FD72F70594}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEF88FA3-100E-45B2-9EC4-16FD72F70594}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEF88FA3-100E-45B2-9EC4-16FD72F70594}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEF88FA3-100E-45B2-9EC4-16FD72F70594}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {09515472-B2BA-402F-AC2B-A5A49B7DFBB3}
+	EndGlobalSection
+EndGlobal
