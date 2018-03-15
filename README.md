@@ -24,7 +24,7 @@ Polymorphism					| [Lab](https://github.com/dobroslav-atanasov/CSharp-OOP-Basics
 - [Exam Preparation I: Need For Speed](https://github.com/dobroslav-atanasov/CSharp-OOP-Basics/tree/master/14.ExamPreparationI-NeedForSpeed) - [Descriptions](https://github.com/dobroslav-atanasov/CSharp-OOP-Basics/tree/master/Resources/Exam%20Preparation%20-%20I%20-%20Need%20For%20Speed)
 - [Exam Preparation II: Avatar](https://github.com/dobroslav-atanasov/CSharp-OOP-Basics/tree/master/15.ExamPreparationII-Avatar) - [Descriptions](https://github.com/dobroslav-atanasov/CSharp-OOP-Basics/tree/master/Resources/Exam%20Preparation%20-%20II%20-%20Avatar)
 - [Exam Preparation III: C# OOP Basics Exam 16.07.2017](https://github.com/dobroslav-atanasov/CSharp-OOP-Basics/tree/master/16.ExamPreparationIII-Minedraft) - [Descriptions](https://github.com/dobroslav-atanasov/CSharp-OOP-Basics/tree/master/Resources/Exam%20Preparation%20-%20III%20-%20Exam%2016.07.2017)
-- [Exam Preparation IV: C# OOP Basics Exam 05.09.2017]() - [Descriptions]()
+- [Exam Preparation IV: C# OOP Basics Exam 05.09.2017](https://github.com/dobroslav-atanasov/CSharp-OOP-Basics/tree/master/17.ExamPreparationIV-GrandPrix) - [Descriptions](https://github.com/dobroslav-atanasov/CSharp-OOP-Basics/tree/master/Resources/Exam%20Preparation%20-%20IV%20-%20Exam%2005.09.2017)
 
 ### [Resources](https://github.com/dobroslav-atanasov/CSharp-OOP-Basics/tree/master/Resources)
 
