@@ -4,12 +4,12 @@
     private double totalTime;
     private Car car;
     private double fuelConsumptionPerKm;
-    private double speed;
 
-    protected Driver(string name, Car car)
+    protected Driver(string name, Car car, double fuelConsumptionPerKm)
     {
         this.Name = name;
         this.Car = car;
+        this.FuelConsumptionPerKm = fuelConsumptionPerKm;
     }
 
     public virtual double Speed => (this.Car.Hp + this.Car.Tyre.Degradation) / this.Car.FuelAmount;
@@ -17,13 +17,13 @@
     public double FuelConsumptionPerKm
     {
         get { return this.fuelConsumptionPerKm; }
-        protected set { this.fuelConsumptionPerKm = value; }
+        private set { this.fuelConsumptionPerKm = value; }
     }
 
     public Car Car
     {
         get { return this.car; }
-        protected set { this.car = value; }
+        private set { this.car = value; }
     }
 
     public double TotalTime
@@ -35,7 +35,7 @@
     public string Name
     {
         get { return this.name; }
-        protected set { this.name = value; }
+        private set { this.name = value; }
     }
 
     public void ReduceFuelAmount(int length)

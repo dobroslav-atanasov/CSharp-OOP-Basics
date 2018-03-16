@@ -2,7 +2,7 @@
 
 public class Car
 {
-    private const double MaxTankCapacity = 160;
+    private const double MaxTankCapacity = 160.0;
 
     private int hp;
     private double fuelAmount;
@@ -28,8 +28,9 @@ public class Car
         {
             if (value < 0)
             {
-                throw new ArgumentException("Out of fuel");
+                throw new ArgumentException(ErrorMessage.OutOfFuel);
             }
+
             if (value > MaxTankCapacity)
             {
                 this.fuelAmount = MaxTankCapacity;

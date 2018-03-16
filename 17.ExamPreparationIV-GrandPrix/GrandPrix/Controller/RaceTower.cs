@@ -12,14 +12,12 @@ public class RaceTower
     private Dictionary<Driver, string> dnfDrivers;
     public bool hasWinner;
     public Driver winner;
-    private string weather;
 
     public RaceTower()
     {
         this.drivers = new Dictionary<string, Driver>();
         this.dnfDrivers = new Dictionary<Driver, string>();
         this.hasWinner = false;
-        this.weather = "Sunny";
     }
 
     public void SetTrackInfo(int lapsNumber, int trackLength)
@@ -120,7 +118,7 @@ public class RaceTower
         if (frontDriver.GetType().Name == "AggressiveDriver" && frontDriver.Car.Tyre.GetType().Name == "UltrasoftTyre")
         {
             interval = 3;
-            if (this.weather == "Foggy")
+            if (this.track.Weather == "Foggy")
             {
                 isCrashed = true;
             }
@@ -128,7 +126,7 @@ public class RaceTower
         if (frontDriver.GetType().Name == "EnduranceDriver" && frontDriver.Car.Tyre.GetType().Name == "HardTyre")
         {
             interval = 3;
-            if (this.weather == "Rainy")
+            if (this.track.Weather == "Rainy")
             {
                 isCrashed = true;
             }
@@ -192,6 +190,6 @@ public class RaceTower
 
     public void ChangeWeather(List<string> commandArgs)
     {
-        this.weather = commandArgs[0];
+        this.track.Weather = commandArgs[0];
     }
 }

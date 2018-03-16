@@ -1,10 +1,7 @@
 ﻿public class HardTyre : Tyre
 {
     public HardTyre(double hardness) 
-        : base(hardness)
+        : base("Hard", hardness)
     {
-        this.Name = "Hard";
     }
-
-    public override string Name { get; }
 }

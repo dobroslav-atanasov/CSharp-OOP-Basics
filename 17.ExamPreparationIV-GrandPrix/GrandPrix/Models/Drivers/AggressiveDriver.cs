@@ -1,12 +1,11 @@
 ﻿public class AggressiveDriver : Driver
 {
-    private const double AggressiveDriverFuelConsumption = 2.7;
+    private const double AggressiveDriveFuelConsumption = 2.7;
     private const double AggressiveDriverSpeed = 1.3;
 
     public AggressiveDriver(string name, Car car) 
-        : base(name, car)
+        : base(name, car, AggressiveDriveFuelConsumption)
     {
-        this.FuelConsumptionPerKm = AggressiveDriverFuelConsumption;
     }
 
     public override double Speed => base.Speed * AggressiveDriverSpeed;
