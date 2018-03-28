@@ -31,14 +31,14 @@ Polymorphism				|[Description](https://github.com/dobroslav-atanasov/CSharp-OOP-
 
 Exams						|Date				|Descriptions																															|Solutions
 ----------------------------|:-----------------:|:-------------------------------------------------------------------------------------------------------------------------------------:|:----------:
-Need For Speed				|11 July 2017		|[Description](https://github.com/dobroslav-atanasov/CSharp-OOP-Basics/tree/master/Resources/Exam-11.07.2017-Need-For-Speed)			|[Solution]()
-Avatar						|12 July 2017		|[Description](https://github.com/dobroslav-atanasov/CSharp-OOP-Basics/tree/master/Resources/Exam-12.07.2017-Avatar)					|[Solution]()
-Minedraft					|16 July 2017		|[Description](https://github.com/dobroslav-atanasov/CSharp-OOP-Basics/tree/master/Resources/Exam-16.07.2017-Minedraft)					|[Solution]()
-Grand Prix					|5 September 2017	|[Description](https://github.com/dobroslav-atanasov/CSharp-OOP-Basics/tree/master/Resources/Exam-05.09.2017-Grand-Prix)				|[Solution]()
-Dungeons and Code Wizards	|18 March 2018		|[Description](https://github.com/dobroslav-atanasov/CSharp-OOP-Basics/tree/master/Resources/Exam-18.03.2018-Dungeons-and-Code-Wizards)	|[Solution]()
+Need For Speed				|11 July 2017		|[Description](https://github.com/dobroslav-atanasov/CSharp-OOP-Basics/tree/master/Resources/Exam-11.07.2017-Need-For-Speed)			|[Solution](https://github.com/dobroslav-atanasov/CSharp-OOP-Basics/tree/master/Exam-11.07.2017-NeedForSpeed)
+Avatar						|12 July 2017		|[Description](https://github.com/dobroslav-atanasov/CSharp-OOP-Basics/tree/master/Resources/Exam-12.07.2017-Avatar)					|[Solution](https://github.com/dobroslav-atanasov/CSharp-OOP-Basics/tree/master/Exam-12.07.2017-Avatar)
+Minedraft					|16 July 2017		|[Description](https://github.com/dobroslav-atanasov/CSharp-OOP-Basics/tree/master/Resources/Exam-16.07.2017-Minedraft)					|[Solution](https://github.com/dobroslav-atanasov/CSharp-OOP-Basics/tree/master/Exam-16.07.2017-Minedraft)
+Grand Prix					|5 September 2017	|[Description](https://github.com/dobroslav-atanasov/CSharp-OOP-Basics/tree/master/Resources/Exam-05.09.2017-Grand-Prix)				|[Solution](https://github.com/dobroslav-atanasov/CSharp-OOP-Basics/tree/master/Exam-07.09.2017-GrandPrix)
+Dungeons and Code Wizards	|18 March 2018		|[Description](https://github.com/dobroslav-atanasov/CSharp-OOP-Basics/tree/master/Resources/Exam-18.03.2018-Dungeons-and-Code-Wizards)	|[Solution](https://github.com/dobroslav-atanasov/CSharp-OOP-Basics/tree/master/Exam-18.03.2018-DungeonsAndCodeWizards)
 
 > **Workshop**
 
 Projects			|Descriptions																							|Solutions
 --------------------|:-----------------------------------------------------------------------------------------------------:|:----------:
-Forum App			|[Description](https://github.com/dobroslav-atanasov/CSharp-OOP-Basics/tree/master/Resources/Workshop)	|[Solution]()
+Forum App			|[Description](https://github.com/dobroslav-atanasov/CSharp-OOP-Basics/tree/master/Resources/Workshop)	|[Solution](https://github.com/dobroslav-atanasov/CSharp-OOP-Basics/tree/master/Workshop-Forum)
