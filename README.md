@@ -36,6 +36,7 @@ Avatar						|12 July 2017		|[Description](https://github.com/dobroslav-atanasov/
 Minedraft					|16 July 2017		|[Description](https://github.com/dobroslav-atanasov/CSharp-OOP-Basics/tree/master/Resources/Exam-16.07.2017-Minedraft)					|[Solution](https://github.com/dobroslav-atanasov/CSharp-OOP-Basics/tree/master/Exam-16.07.2017-Minedraft)
 Grand Prix					|5 September 2017	|[Description](https://github.com/dobroslav-atanasov/CSharp-OOP-Basics/tree/master/Resources/Exam-05.09.2017-Grand-Prix)				|[Solution](https://github.com/dobroslav-atanasov/CSharp-OOP-Basics/tree/master/Exam-07.09.2017-GrandPrix)
 Dungeons and Code Wizards	|18 March 2018		|[Description](https://github.com/dobroslav-atanasov/CSharp-OOP-Basics/tree/master/Resources/Exam-18.03.2018-Dungeons-and-Code-Wizards)	|[Solution](https://github.com/dobroslav-atanasov/CSharp-OOP-Basics/tree/master/Exam-18.03.2018-DungeonsAndCodeWizards)
+Storage Master				|26 April 2018		|[Description]				|[Solution]
 
 > **Workshop**
 
